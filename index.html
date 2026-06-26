@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>RoboLab Stem</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="transparent-icon2222.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="transparent-icon2222.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="transparent-icon2222.png">
+    <link rel="manifest" href="transparent-icon2222.png">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo"><img
+                    src="WhatsApp_Image_2025-11-20_at_15.25.10_c24f260b-removebg-preview.png" alt=""></a>
+
+
+            <button class="navbar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="navbar-menu">
+                <li><i class="fa-solid fa-house" style="color: rgb(0, 0, 0);"></i><a href="#" class="active">Home</a>
+                </li>
+                <li><i class="fa-solid fa-book" style="color: rgb(0, 0, 0);"></i><a href="#">Dashboard</a></li>
+                <li><i class="fa-regular fa-circle-user" style="color: rgb(5, 5, 5);"></i><a href="#">Profile</a></li>
+                <li> <i class="fa-solid fa-graduation-cap" style="color: rgb(0, 0, 0);"></i><a href="#">Certificate</a>
+                </li>
+                <li><i class="fa-solid fa-arrow-right-to-bracket" style="color: rgb(5, 5, 5);"></i>
+                    <a href="#" class="login-btn">Login</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <!-- <div class="foterborder"></div> -->
+
+
+
+
+
+
+
+
+
+    <div class="form-box  " id="logFilePage">
+        <span class="crossbtn" onclick="closeModel();">&times;</span>
+        <form action="">
+            <h1>Login </h1>
+            <div>
+                <label for="">Email</label>
+                <input type="text" name="email" placeholder=" Enter Your Email / Phone No." required>
+            </div>
+            <div>
+                <label for="">Password</label>
+                <input type="password" name="password" placeholder="Create your own passward" required>
+            </div>
+            <button type="submit" name="login" class="login-button" role="button" onclick="showModel();">Login</button>
+            <p class="login-prgh">Don't have an account?<a href=""> <button class="rl" id="toggleBtn"
+                        onclick="togglePages()">Resigter</button> </a></p>
+        </form>
+    </div>
+
+
+
+
+    <div class="form-box2 hidden " id="regPage">
+        <span class="crossbtn2" onclick="closeModel2();">&times;</span>
+        <form action="">
+            <h1>Register</h1>
+            <div>
+                <label for="">Name</label>
+                <input type="text" name="name" placeholder=" Enter Your Name" required>
+            </div>
+            <div>
+                <label for="">School</label>
+                <input type="text" placeholder="Enter Your School Name" required>
+            </div>
+            <div>
+                <label for="">Grade</label>
+                <select name="role" id="" required>
+                    <option value="">--Select Grade--</option>
+                    <option value="Grade 02">Grade 01</option>
+                    <option value="Grade 01">Grade 02</option>
+                    <option value="Grade 03">Grade 03</option>
+                    <option value="Grade 04">Grade 04</option>
+                    <option value="Grade 05">Grade 05</option>
+                    <option value="Grade 06">Grade 06</option>
+                    <option value="Grade 07">Grade 07</option>
+                    <option value="Grade 08">Grade 08</option>
+                    <option value="Grade 09">Grade 09</option>
+                    <option value="Grade 10">Grade 10</option>
+                </select>
+            </div>
+            <div>
+                <label for="">Phone no.</label>
+                <input type="number" placeholder="Enter Your Phone no." required>
+            </div>
+            <button type="submit" name="login" class="login-button" role="button">Login</button>
+            <p class="login-prgh">Already have an account? <a href=""> <button class="rl" id="toggleBtn"
+                        onclick="togglePages()">Login</button> </a></p>
+        </form>
+    </div>
+
+    <main>
+        <div class="container">
+
+            <div class="hero-img">
+                <img src='rb-lag1.jpg' alt="img">
+            </div>
+
+            <div class="prgh-container">
+
+                <p class="prgh3" id="marginepragrph">Welcome, Student</p>
+                <P class="ga"><span class="span">☀️</span>Good Afternoon...!</P>
+                <p class="prgh3 demo " id="greeting"></p>
+                <p class="sp">BUILD. PLAY.</p>
+                <p class="prgh" id="ps2">Robotics Classes For Kids in Forbesganj That
+                    Build Real STEM Skills</p>
+                <!-- <p class="prgh" id="ps">MCQ Based Test Your Knowledge.</p> -->
+                <p class="prgh3">RoboLab offers hands-on robotics and coding programs for kids ages 6–14 in India,
+                    designed to build confidence, problem-solving skills, and a genuine love for STEM. At our India
+                    center, children don’t just follow instructions—they build, test, think, and create.</p>
+                <!-- <p class="prgh3">Take Quizzes, Learn & Have Fun! Browse thousands of quizzes and test your knowledge. -->
+                <!-- </p> -->
+                <!-- <div class="foterborder"></div> -->
+
+
+            </div>
+
+        </div>
+
+    </main>
+    <!-- <div class="linediv"></div> -->
+
+    <section class="fsection">
+        <!-- <div class="linediv"></div> -->
+        <div class="foterborder"></div>
+
+        <div class="contweteach">
+
+            <div class="wetch">
+                <img src="weteachimages.jpg" alt="img">
+            </div>
+
+
+            <div class="wwtc">
+                <div class="wwtp">
+                    <h1>Who We Teach</h1>
+                    <ul type="none">
+                        <li>We work with children ages 6–14.</li>
+                        <li>Beginners are always welcome.</li>
+                        <li>No prior coding or robotics experience is required.</li>
+                        <li>Our students include:</li>
+                    </ul>
+                    <ul type="disc" class="dot">
+                        <li>Curious builders</li>
+                        <li>Creative thinkers</li>
+                        <li>Analytical problem-solvers</li>
+                        <li>Kids who simply want to try something new</li>
+
+                    </ul>
+                    <p>Whether your child is shy, energetic, detail-oriented, or imaginative <br>— we meet them where
+                        they
+                        are
+                        and
+                        help them grow from there.</p>
+                </div>
+            </div>
+        </div>
+        <div class="is"></div>
+
+
+    </section>
+
+
+    <section class="solsec">
+        <div class="solprgh">
+            <div class="sol-container">
+                <div class="solline"></div>
+            </div>
+            <p id="ssp">
+                Are you looking to set up a Robotics Lab, Atal Tinkering Lab, STEM Lab, AI Lab, or AR & VR Lab for your
+                school?
+                Your search ends here — ROBOLABSTEM is your complete one-stop solution!.</p>
+
+        </div>
+    </section>
+    <section class="solsec">
+        <div class="shq">
+            <h1 class="shqh">Still Have <span class="shqa">Question</span>?</h1>
+            <span class="shc">abc@robolab.com</span><br>
+            <span class="shc num">123-456-7890</span><br>
+            <p class="shc">We're happy to help you determine the best starting point for your child.</p>
+
+        </div>
+    </section>
+
+
+    <div class="foterborder"></div>
+    <!-- <hr> -->
+
+    <footer>
+
+        <!-- <div class="question">
+            <span class="qs">Questions? Call</span>
+            <a class="qs">800-919-1743</a>
+        </div> -->
+
+
+        <div class="list">
+
+            <ul type="none" class="ful">
+                <li class="head">RoboLabSTEM private limited</li>
+                <li>At RoboLabSTEM, we aim to empower the minds of young students and gear them up to be 'Innovators and
+                    Enterpreneurs', for a future which will surely be dominated by Ai driven technologies.</li>
+
+
+            </ul>
+            <ul type="none" class="ful ful-size">
+                <li class="head">Quick links</li>
+
+                <li><a href="index.html"><i class="fa-solid fa-house" style="color: rgb(199, 189, 189);"></i>Home</a>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-book" style="color:rgb(199, 189, 189)"></i>Dashboard</a></li>
+                <li><a href="#"><i class="fa-regular fa-circle-user" style="color:rgb(199, 189, 189) ;"></i>Profile</a>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-graduation-cap"
+                            style="color: rgb(199, 189, 189);"></i>Certificate</a></li>
+                <li><a href="#" class="login-btn2" onclick="showModel();"><i class="fa-solid fa-arrow-right-to-bracket"
+                            style="color: rgb(199, 189, 189);"></i>Login / Register</a></li>
+                <li>since 2026</li>
+
+            </ul>
+            <ul type="none" class="ful ">
+                <li class="head">Contact Details</li>
+                <li><i class="fa-solid fa-location-dot" style="color: rgb(209, 199, 199);"></i>RobolabStem PVT LTD. Near
+                    Registry Office, Forbesganj, Dist-Araria Bihar-854318</li>
+
+                <li><i class="fa-solid fa-location-dot" style="color: rgb(209, 199, 199);"></i>NH 31 Maranga Purnea
+                    Bihar Near Bijendra Public School 854301</li>
+                <li><i class="fa-solid fa-location-dot" style="color: rgb(209, 199, 199);"></i>Near By Kali Mandir
+                    Murliyachak, Madhubani Bihar-847223</li>
+                <li><i class="fa-solid fa-envelope" style="color: rgb(209, 199, 199);"></i>info@robolabstem.in</li>
+                <li><i class="fa-solid fa-phone" style="color: rgb(209, 199, 199);"></i>1234567890</li>
+
+            </ul>
+        </div>
+
+        <div class="end-line">Made with (&hearts;)by india<br>&#169; 2026, UGP web maker</div>
+    </footer>
+
+
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
